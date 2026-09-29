@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fresh Bin Clean | Maddington & Byford Bin Cleaning</title>
+<meta name="description" content="Professional wheelie bin cleaning for just $30 per bin in Maddington and Byford. Fresh, clean and deodorised bins.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;color:#17324d;background:#f7fbfd;line-height:1.6}
+header{background:#0b6e8e;color:white;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:5}
+.logo{font-size:1.35rem;font-weight:800}
+nav a{color:white;text-decoration:none;margin-left:22px;font-weight:700}
+.hero{padding:85px 7%;background:linear-gradient(135deg,#087f9f,#20b8a6);color:white}
+.hero-inner{max-width:1100px;margin:auto}
+.badge{display:inline-block;background:#ffffff22;border:1px solid #ffffff55;padding:7px 13px;border-radius:30px;font-weight:700;margin-bottom:18px}
+h1{font-size:clamp(2.5rem,7vw,5rem);line-height:1.02;max-width:800px;margin-bottom:20px}
+.hero p{font-size:1.2rem;max-width:650px;margin-bottom:28px}
+.btn{display:inline-block;background:#fff;color:#08708e;padding:14px 23px;border-radius:10px;text-decoration:none;font-weight:800;margin-right:10px}
+.btn.dark{background:#17324d;color:white}
+.price{font-size:2.2rem;font-weight:900;margin:15px 0}
+section{padding:70px 7%}
+.container{max-width:1100px;margin:auto}
+.title{text-align:center;font-size:2.2rem;margin-bottom:12px}
+.subtitle{text-align:center;color:#587080;max-width:650px;margin:0 auto 40px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:white;padding:28px;border-radius:18px;box-shadow:0 8px 30px #17324d12}
+.icon{font-size:2rem;margin-bottom:12px}
+.card h3{margin-bottom:8px}
+.offer{background:#e8f7f5}
+.offer-box{background:#fff;border-radius:22px;padding:35px;display:flex;justify-content:space-between;align-items:center;gap:30px;box-shadow:0 8px 30px #17324d12}
+.offer-box h2{font-size:2rem}
+.contact{background:#17324d;color:white}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:start}
+.contact p{color:#d7e6ed}
+form{background:white;padding:28px;border-radius:18px;color:#17324d}
+label{display:block;font-weight:700;margin:12px 0 6px}
+input,textarea,select{width:100%;padding:13px;border:1px solid #ccd9df;border-radius:9px;font:inherit}
+textarea{min-height:100px;resize:vertical}
+button{border:0;cursor:pointer;font:inherit;font-weight:800;background:#12a88e;color:white;padding:14px 20px;border-radius:9px;margin-top:16px;width:100%}
+footer{text-align:center;padding:25px;background:#10283b;color:#bcd0da;font-size:.9rem}
+@media(max-width:750px){
+nav{display:none}.cards,.contact-grid{grid-template-columns:1fr}
+.offer-box{display:block}.offer-box .btn{margin-top:20px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">🧼 Fresh Bin Clean</div>
+  <nav><a href="#services">Services</a><a href="#price">Pricing</a><a href="#contact">Book</a></nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-inner">
+    <div class="badge">🗑️ Professional Bin Cleaning</div>
+    <h1>Fresh bins. Fresh home.</h1>
+    <p>We clean, sanitise and deodorise your wheelie bins so you don't have to deal with the mess.</p>
+    <div class="price">$30 <span style="font-size:1rem;font-weight:600">per bin</span></div>
+    <a class="btn" href="#contact">Book a Clean</a>
+    <a class="btn dark" href="#services">See what's included</a>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2 class="title">What we do</h2>
+    <p class="subtitle">A simple service designed to leave your bin cleaner, fresher and nicer to use.</p>
+    <div class="cards">
+      <div class="card"><div class="icon">💦</div><h3>Deep Clean</h3><p>We wash away built-up grime and residue from inside your bin.</p></div>
+      <div class="card"><div class="icon">✨</div><h3>Sanitise</h3><p>Your bin gets a thorough clean to help keep unpleasant mess under control.</p></div>
+      <div class="card"><div class="icon">🌿</div><h3>Deodorise</h3><p>We help tackle lingering bin smells so your bin is fresher after collection day.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="offer" id="price">
+  <div class="container">
+    <div class="offer-box">
+      <div>
+        <h2>Only $30 per bin</h2>
+        <p>Need more than one bin cleaned? Select the number of bins when you book.</p>
+      </div>
+      <a class="btn dark" href="#contact">Get a Quote / Book</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+    <div>
+      <h2 style="font-size:2.4rem;margin-bottom:15px">Ready for a cleaner bin?</h2>
+      <p>We clean wheelie bins in <strong>Maddington and Byford only</strong>. Send a booking request and we'll get back to you with a suitable time.</p>
+      <br>
+      <p><strong>Price:</strong> $30 per bin</p>
+      <p><strong>Service area:</strong> Maddington & Byford only</p>
+      <p><strong>Phone:</strong> 0476 939 540</p>
+    </div>
+    <form onsubmit="sendBooking(event)">
+      <h2>Book a clean</h2>
+      <label for="name">Name</label>
+      <input id="name" required placeholder="Your name">
+      <label for="suburb">Suburb</label>
+      <select id="suburb" required><option value="">Select suburb</option><option>Maddington</option><option>Byford</option></select>
+      <label for="bins">Number of bins</label>
+      <select id="bins"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+      <label for="message">Anything else?</label>
+      <textarea id="message" placeholder="Preferred day, access details, etc."></textarea>
+      <button type="submit">Send Booking Request</button>
+      <p id="status" style="font-size:.85rem;margin-top:10px;color:#587080"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 Fresh Bin Clean · Maddington & Byford · $30 per bin</footer>
+
+<script>
+function sendBooking(e){
+  e.preventDefault();
+  const name=document.getElementById('name').value;
+  const suburb=document.getElementById('suburb').value;
+  const bins=document.getElementById('bins').value;
+  const message=document.getElementById('message').value;
+  const total=Number(bins)*30;
+  const subject=encodeURIComponent('Bin Cleaning Booking');
+  const body=encodeURIComponent(
+    `Name: ${name}\nSuburb: ${suburb}\nBins: ${bins}\nEstimated total: $${total}\nDetails: ${message}`
+  );
+  window.location.href=`mailto:YOUR-EMAIL@example.com?subject=${subject}&body=${body}`;
+  document.getElementById('status').textContent='Your email app should open with the booking details. Replace YOUR-EMAIL@example.com in the website code with your real email.';
+}
+</script>
+</body>
+</html>
